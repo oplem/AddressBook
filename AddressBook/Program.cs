@@ -1,10 +1,15 @@
-﻿namespace AddressBook
+﻿using System.Configuration;
+
+namespace AddressBook
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Rolodex rolodex = new Rolodex();
+            string connectionString;
+            connectionString = ConfigurationManager.AppSettings["ApplicationName"];
+
+            Rolodex rolodex = new Rolodex(connectionString);
             rolodex.DoStuff();
         }
     }
