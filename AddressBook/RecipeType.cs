@@ -3,9 +3,9 @@
     public enum RecipeType
     {
         Appetizers,
-        Entrees,
-        Deserts,
-        
-        UPPER_LIMIT 
+        Entreés,
+        Desserts,
+
+        UPPER_LIMIT
     }
 }
