@@ -2,9 +2,10 @@
 {
     public class Recipe : IMatchable
     {
-        public Recipe(string title)
+        public Recipe(string title, RecipeType type)
         {
             _title = title;
+            _type = type; 
         }
 
         public bool Matches(string term)
@@ -18,5 +19,6 @@
         }
 
         private string _title;
+        private readonly RecipeType _type;
     }
 }
